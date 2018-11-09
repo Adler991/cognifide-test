@@ -1,0 +1,134 @@
+
+.header {
+  padding-top: 13px;
+  padding-bottom: 10px;
+}
+
+.header-wrapper {
+  display: flex;
+  
+  background: #FFFFFF;
+}
+
+.logo {
+  display: block;
+  margin-left: 41.145833333333%;
+}
+
+.logo a {
+  display: block;
+  
+  font-family: @main-font;
+  font-size: 32px;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
+  color: @main-color;
+}
+
+.logo-color {
+  color: @sub-main-color;
+}
+
+.social-menu {
+  max-width: 132px;
+  width: 100%;
+  margin-left: auto;
+  display: flex;
+  justify-content: space-between;
+  
+  list-style: none;
+}
+
+.social-menu__link {
+  display: block;
+  width: 18px;
+  height: 18px;
+}
+
+.icon-el {
+  background: url('../img/soc-icons/ev.png') center no-repeat;
+}
+.icon-tt {
+  background: url('../img/soc-icons/tt.png') center no-repeat;
+}
+.icon-pt {
+  background: url('../img/soc-icons/pt.png') center no-repeat;
+}
+.icon-in {
+  background: url('../img/soc-icons/ln.png') center no-repeat;
+}
+.icon-fb {
+  background: url('../img/soc-icons/fb.png') center no-repeat;
+}
+.icon-cb {
+  background: url('../img/soc-icons/dl.png') center no-repeat;
+}
+
+.nav {
+  padding-top: 11px;
+}
+
+.nav__list {
+  margin: 0 auto;
+  display: flex;
+  width: 100%;
+  max-width: 350px;
+  justify-content: space-between;
+}
+
+.nav__item {
+  list-style: none;
+}
+
+.nav__link {
+  display: block;
+  padding: 0 16px;
+  
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  line-height: 1.8;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #707070;
+  
+  border: solid 1px transparent;
+}
+
+.nav__link:hover,
+.nav__link-current {
+  
+  color: #ffffff;
+  
+  box-shadow: inset 0px 1px 0 0 rgba(255, 255, 255, 0.25);
+  border: solid 1px #045279;
+  background-blend-mode: , overlay;
+  background-image: linear-gradient(to bottom, #076e9f, #076e9f), linear-gradient(to top, #000000, #ffffff);
+}
+
+
+@media screen and (max-width: 1000px ) {
+  .social-menu {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 670px ) {
+  .header-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .logo {
+    margin-left: 0;
+    margin-bottom: 15px;
+  }
+  
+  .social-menu {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
